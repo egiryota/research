@@ -16,13 +16,15 @@ def main():
     parser.add_argument("--do_eval", action="store_true")
     parser.add_argument("--do_test", action="store_true")
 
+    parser.add_argument("--output_dir", type=str)
+
     args = parser.parse_args()
 
     if args.do_train:
         pass
 
-    if args.do_eval:
-        pass
+        if args.do_eval:
+            pass
 
     if args.do_test:
         pass
